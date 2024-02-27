@@ -1,0 +1,53 @@
+/* PeopleList.css */
+
+.PeopleList {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .PeopleList h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .PeopleList table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .PeopleList th, .PeopleList td {
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .PeopleList th {
+    background-color: #ffbb00;
+    color: #fff;
+  }
+  
+  .PeopleList tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .PeopleList tr:hover {
+    background-color: #ddd;
+  }
+  
+  .PeopleList button {
+    background-color: #ffbb00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .PeopleList button:hover {
+    background-color: #ffbb00ba;
+  }
+  
