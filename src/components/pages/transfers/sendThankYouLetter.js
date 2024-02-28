@@ -13,7 +13,7 @@ export default function SendThankYouLetter(props) {
   const [status, setStatus]=React.useState(undefined)
 const dispatch=useDispatch()
 const selector=useSelector()
-  const handleClickOpen = () => {
+  const handleOpen = () => {
     setOpen(true);
   };
 
@@ -23,7 +23,7 @@ const selector=useSelector()
 
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button variant="outlined" onClick={handleOpen}>
        לשליחת מכתב תודה
       </Button>
       <Dialog
