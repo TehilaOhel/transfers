@@ -10,10 +10,10 @@ export default function ThankYouLetter(props) {
   const [open, setOpen] = React.useState(false);
   const [thankYouLetter, setthankYouLetter] = React.useState(undefined)
   const showthankYouLetter=(code)=>{
-    const letter=props.transferOut.find(t=>t.transferCode==code).thankYouLetter
-    setthankYouLetter(letter)
+    const letterToDisplay=props.transferOut.find(t=>t.transferCode==code).thankYouLetter
+    setthankYouLetter(letterToDisplay)
     }
-  const handleClickOpen = () => {
+  const handleOpen = () => {
 
     setOpen(true);
     showthankYouLetter(props.id)
@@ -25,7 +25,7 @@ export default function ThankYouLetter(props) {
 
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button variant="outlined" onClick={handleOpen}>
       לצפייה במכתב
       </Button>
       <Dialog
