@@ -12,7 +12,7 @@ export default function SendThankYouLetter(props) {
   const [open, setOpen] = React.useState(false);
   const [status, setStatus]=React.useState(undefined)
 const dispatch=useDispatch()
-const selector=useSelector()
+// const selector=useSelector()
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -38,7 +38,7 @@ const selector=useSelector()
             const letter = formJson.letter;
             const obj={letter:letter, code:props.id}
             dispatch(sendThankYouLetterOnServer(obj));
-            setStatus(selector(s=>s.transfer.statusLetter))
+            // setStatus(selector(s=>s.transfer.statusLetter))
             if(status==true)
             handleClose();
             
